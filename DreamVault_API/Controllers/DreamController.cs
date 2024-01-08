@@ -169,16 +169,6 @@ namespace DreamVault_API.Controllers
                 }
             }
 
-            //if (!string.IsNullOrEmpty(req.DreamVisualDescription))
-            //{
-            //    // Make the API call to OpenAI here
-            //    result = await GenerateImage(req.DreamVisualDescription);
-            //    user.AiImagesGeneratedThisMonth++;
-            //    _db.Update(user);
-            //    await _db.SaveChangesAsync();
-            //    // You can process the result from OpenAI here
-            //}
-
             var dream = new Dream
             {
                 AppUserId = user.AppUserId,
@@ -208,47 +198,81 @@ namespace DreamVault_API.Controllers
         {
             using (var client = new HttpClient())
             {
-                // Set the API endpoint URL
+                // Set the API endpoint URL and headers
                 var apiUrl = "https://api.openai.com/v1/images/generations";
-
-                // Set the OpenAI API key in the request headers
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_config.GetValue<string>("OpenAI:SecretKey")}");
 
-                // Define the request payload
+                // Define and send the request payload
                 var requestPayload = new
                 {
                     prompt = visualDescription,
                     model = "dall-e-3",
                     n = 1,
                     size = "1024x1024",
-
                 };
 
                 var jsonRequest = JsonConvert.SerializeObject(requestPayload);
                 var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
 
-                // Send the POST request to OpenAI
                 var response = await client.PostAsync(apiUrl, content);
 
-                // Check if the request was successful (HTTP status code 200)
                 if (response.IsSuccessStatusCode)
                 {
-                    // Read the response content
                     var responseContent = await response.Content.ReadAsStringAsync();
                     var jsonResponse = JsonConvert.DeserializeObject<dynamic>(responseContent);
                     var imageUrl = (string)jsonResponse.data[0].url;
 
-                    // Return the response content (generated image or data)
-                    return imageUrl;
+                    // Use a separate HttpClient to download the image
+                    byte[] imageBytes;
+                    using (var imageClient = new HttpClient())
+                    {
+                        try
+                        {
+                            imageBytes = await imageClient.GetByteArrayAsync(imageUrl);
+                        }
+                        catch (HttpRequestException ex)
+                        {
+                            // Log detailed error information
+                            throw new Exception($"Failed to download image: {ex.Message}", ex);
+                        }
+                    }
+
+                    var fileName = $"{Guid.NewGuid()}.png";
+                    var supabaseUrl = await UploadToSupabaseBucket(fileName, imageBytes);
+
+                    return supabaseUrl;
                 }
                 else
                 {
-                    // Handle API request failure (e.g., log the error, return an error response, etc.)
-                    // You can also throw an exception if needed.
-                    throw new Exception($"API request failed with status code {response.StatusCode}");
+                    return ($"API request failed with status code {response.StatusCode}");
+
                 }
             }
         }
+
+        private async Task<string> UploadToSupabaseBucket(string fileName, byte[] imageBytes)
+        {
+            // Initialize the Supabase client
+            var client = new Supabase.Client("https://bjzqexdidzsoyqgpyikb.supabase.co", _config.GetValue<string>("Supabase:Key"));
+
+            // Save the byte array to a temporary file
+            var tempFilePath = Path.GetTempFileName();
+            await System.IO.File.WriteAllBytesAsync(tempFilePath, imageBytes); // Use full namespace for clarity
+
+            // Upload the image to the bucket
+            // Assuming the Upload method requires a path (string) and file name (string)
+            await client.Storage.From("ai-images").Upload(tempFilePath, fileName);
+
+            // Delete the temporary file
+            System.IO.File.Delete(tempFilePath);
+
+            // Construct the URL of the image in the Supabase bucket
+            var supabaseUrl = $"https://bjzqexdidzsoyqgpyikb.supabase.co/storage/v1/object/public/ai-images/{fileName}";
+
+            return supabaseUrl;
+        }
+
+
 
     }
 

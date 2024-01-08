@@ -100,3 +100,15 @@ H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Debug\net6.0\DreamVault_API.p
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Debug\net6.0\DreamVault_API.genruntimeconfig.cache
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Debug\net6.0\ref\DreamVault_API.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Functions.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Gotrue.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\JWTDecoder.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\System.ComponentModel.Composition.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\MimeMapping.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Postgrest.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Realtime.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Core.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Storage.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\System.Reactive.dll
+H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Websocket.Client.dll
