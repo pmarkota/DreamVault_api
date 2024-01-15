@@ -10,9 +10,6 @@ H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Azure.Identity.d
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\BCrypt.Net-Next.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Humanizer.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -28,8 +25,6 @@ H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extens
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
@@ -99,11 +94,8 @@ H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Debug\net6.0\refint\DreamVaul
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Debug\net6.0\DreamVault_API.pdb
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Debug\net6.0\DreamVault_API.genruntimeconfig.cache
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Debug\net6.0\ref\DreamVault_API.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\SixLabors.ImageSharp.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Functions.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Gotrue.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\JWTDecoder.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\System.ComponentModel.Composition.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\MimeMapping.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Postgrest.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\bin\Debug\net6.0\Supabase.Realtime.dll

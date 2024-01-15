@@ -9,12 +9,7 @@ H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Azu
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\BCrypt.Net-Next.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Supabase.Functions.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Supabase.Gotrue.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\JWTDecoder.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\System.ComponentModel.Composition.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
@@ -28,8 +23,6 @@ H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Mic
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Configuration.Abstractions.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Identity.Core.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Identity.Stores.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Logging.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Options.dll
@@ -52,7 +45,6 @@ H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Npg
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Supabase.Postgrest.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Supabase.Realtime.dll
-H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\SixLabors.ImageSharp.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Stripe.net.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Supabase.Core.dll
 H:\Visual Studio\DreamVault_API\DreamVault_API\obj\Release\net6.0\PubTmp\Out\Supabase.dll
